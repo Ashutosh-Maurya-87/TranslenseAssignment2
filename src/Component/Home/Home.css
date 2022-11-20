@@ -1,0 +1,19 @@
+.homePage {
+  align-items: center;
+  text-align: center;
+  width: 43%;
+  margin: auto;
+  color: white;
+}
+
+.massively {
+    font-size: 5rem;
+}
+
+.about {
+    font-style: italic;
+    font-family: serif;
+    line-height: 35px;
+}
+
+ 
