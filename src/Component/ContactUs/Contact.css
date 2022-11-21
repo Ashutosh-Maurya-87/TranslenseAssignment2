@@ -2,5 +2,11 @@
   background: #eeeeeefc;
   margin: auto;
   width: 80%;
+}
+#example {
+  height: 50px;
+  border-radius: 0;
+}
+.main-col {
   padding: 5%;
 }

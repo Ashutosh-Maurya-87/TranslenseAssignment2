@@ -8,38 +8,34 @@ const Contact = () => {
     <>
       <Form className="form">
         <Row>
-          <Col md={6}>
+          <Col md={6} sm={12} lg={6} className="main-col">
             <FormGroup>
-              <Label for="exampleEmail">Name</Label>
-              <Input id="name" name="name" placeholder="" type="text" />
+              <Label for="exampleName">NAME</Label>
+              <Input id="example" name="name" placeholder="" type="text" />
             </FormGroup>
             <FormGroup>
-              <Label for="exampleEmail">Email</Label>
-              <Input
-                id="exampleEmail"
-                name="email"
-                placeholder=""
-                type="email"
-              />
+              <Label for="exampleEmail">EMAIL</Label>
+              <Input id="example" name="email" placeholder="" type="email" />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">Message</Label>
+              <p for="examplePassword">MESSAGE</p>
               <textarea
                 id="textArea"
                 name="textArea"
                 placeholder=""
                 type="text"
+                rows={"5"}
+                cols={"59"}
               />
             </FormGroup>
             <Button>SEND MESSAGE</Button>
           </Col>
           <Col sm={12} lg={6} md={6}>
-            <Col sm={12} lg={2} md={2}>
+            <div className="d-flex">
               <p>Address</p>
-            </Col>
-            <Col sm={12} lg={10} md={10}>
+
               <p>1234 Somewhere Rad # 87257 Nashville, TN 00000-0000</p>
-            </Col>
+            </div>
             <Col sm={12} lg={2} md={2}>
               <p>PHONE</p>
             </Col>
