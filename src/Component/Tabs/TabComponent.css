@@ -12,19 +12,57 @@
 .tab-buttons {
   margin-bottom: 50px;
 }
+
+ul {
+  padding-left: 0rem;
+}
+.react-tabs__tab {
+  padding: 20px 32px;
+  border: 0;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.react-tabs__tab:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+.react-tabs__tab--selected:hover {
+  background: white;
+  font-weight: 700;
+
+}
+.react-tabs__tab--selected {
+  background: white;
+  color: black;
+  font-weight: 700;
+
+}
+.fa-icon {
+  color: white;
+  width: 25px;
+  height: 34px;
+  margin: 15px;
+}
+.iconFa {
+  margin-right: 34px;
+}
+.react-tabs__tab--selected:focus-visible {
+  outline: none;
+}
 .react-tabs__tab-list {
   align-items: flex-start;
-  padding: 10px;
-  gap: 24px;
-  background: #ffffff;
-  border: 1px solid #f7f7f7;
+  background: #41464b75;
   box-shadow: 0px 4px 8px #00000014;
-  border-radius: 4px;
   max-width: 100%;
   margin: auto;
   display: flex;
+  justify-content: space-between;
 }
-
+.massiveHeading {
+  font-weight: 700;
+}
 .main-container {
   margin: auto;
   width: 80%;
@@ -38,11 +76,51 @@
   margin: auto;
 }
 .fistImage {
-    width: 75%;
+  width: 75%;
 }
 .border {
   border: 1px solid grey;
 }
+.columnSection {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstColumnBtn {
+  padding: 7px;
+  width: 11%;
+  margin: 7%;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .image-part {
   display: flex;
+}
+.cardDate {
+  margin: 60px 0 13px;
+}
+.cardHeading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 57%;
+}
+.cardPara {
+  width: 88%;
+  margin: 30px;
+}
+.cardButton {
+  padding: 7px;
+  width: 21%;
+  margin: 0 0 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+
 }

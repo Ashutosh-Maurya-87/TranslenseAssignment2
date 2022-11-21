@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const GenericPage = () => {
-  return (
-    <div>GenericPage</div>
-  )
-}
+  return <div >GenericPage</div>;
+};
 
-export default GenericPage
+export default GenericPage;

@@ -1,6 +1,8 @@
 import React from "react";
 import TabsComponent from "../Tabs/Index";
 import "./Home.css";
+import { CgArrowDownO } from "react-icons/cg";
+import Contact from "../ContactUs";
 
 const Home = () => {
   return (
@@ -20,8 +22,10 @@ const Home = () => {
           and released for free under the{" "}
           <a href="">Creative Commons license.</a>
         </p>
+        <CgArrowDownO className="arrowIcon" />
       </div>
       <TabsComponent />
+      <Contact />
     </>
   );
 };

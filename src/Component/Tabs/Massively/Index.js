@@ -8,10 +8,10 @@ const Massively = () => {
     <div className="container">
       <section>
         <Row>
-          <Col className="text-center">
+          <Col className="text-center columnSection">
             <div className="firstSection">
               <p>April 25, 2017</p>
-              <h1>AND THIS IS A MASSIVE HEADLINE</h1>
+              <h1 className="massiveHeading">AND THIS IS A MASSIVE HEADLINE</h1>
               <p>
                 Aenean ornare velit lacus enim ullamcorper proin aliquam
                 facilisis ante sd etiam magna interdum congue. Lorem ipsum dolor
@@ -19,6 +19,7 @@ const Massively = () => {
               </p>
             </div>
             <img src={firstImage} alt="imageFirst" className="fistImage" />
+            <button className="firstColumnBtn">FULL STORY</button>
           </Col>
         </Row>
       </section>
@@ -27,12 +28,12 @@ const Massively = () => {
           {data.map((item, index) => {
             return (
               <>
-                <Col key={index} sm={12} md={6} lg={6} className="border">
-                  <p>{item.date}</p>
-                  <h1>{item.heading}</h1>
+                <Col key={index} sm={12} md={6} lg={6} className="border column">
+                  <p className="cardDate">{item.date}</p>
+                  <h1 className="cardHeading">{item.heading}</h1>
                   <span>{item.image}</span>
-                  <p>{item.para}</p>
-                  <button>Full Story</button>
+                  <p className="cardPara">{item.para}</p>
+                  <button className="cardButton">FULL STORY</button>
                 </Col>
               </>
             );

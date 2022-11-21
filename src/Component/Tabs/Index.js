@@ -5,36 +5,33 @@ import ElementRef from "./ElementsReference/Index";
 import GenericPage from "./GenericPage/Index";
 import Massively from "./Massively/Index";
 import "./TabComponent.css";
+import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const TabsComponent = () => {
   return (
     <div>
       <Tabs>
         <TabList>
-          <Tab>THIS IS MASSIVELY</Tab>
-          <Tab>GENERIC PAGE</Tab>
-          <Tab>ELEMENTS REFERENCE</Tab>
+          <div className="d-flex">
+            <Tab>THIS IS MASSIVELY</Tab>
+            <Tab>GENERIC PAGE</Tab>
+            <Tab>ELEMENTS REFERENCE</Tab>
+          </div>
+          <div className="iconFa">
+            <FaTwitter className="fa-icon"/>
+            <FaFacebook className="fa-icon"/>
+            <FaInstagram className="fa-icon"/>
+            <FaGithub className="fa-icon"/>
+          </div>
         </TabList>
         <TabPanel>
-          {/* <Row> */}
-            {/* <Col sm={12} lg={6} md={6}> */}
-              <Massively />
-            {/* </Col> */}
-          {/* </Row> */}
+          <Massively />
         </TabPanel>
         <TabPanel>
-          <Row>
-            <Col sm={12} lg={6} md={6}>
-              <GenericPage />
-            </Col>
-          </Row>
+          <GenericPage />
         </TabPanel>
         <TabPanel>
-          <Row>
-            <Col sm={12} lg={6} md={6}>
-              <ElementRef />
-            </Col>
-          </Row>
+          <ElementRef />
         </TabPanel>
       </Tabs>
     </div>

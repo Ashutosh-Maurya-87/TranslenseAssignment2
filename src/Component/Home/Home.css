@@ -2,18 +2,31 @@
   align-items: center;
   text-align: center;
   width: 43%;
-  margin: auto;
+  margin: 6% auto;
   color: white;
 }
 
 .massively {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .about {
-    font-style: italic;
-    font-family: serif;
-    line-height: 35px;
+  font-style: italic;
+  font-family: serif;
+  line-height: 35px;
 }
-
- 
+ul.actions {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  cursor: default;
+  list-style: none;
+  margin-left: -0.75rem;
+  padding-left: 0;
+}
+.arrowIcon {
+  width: 15%;
+  height: 11%;
+  cursor: pointer;
+}
